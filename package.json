@@ -1,0 +1,29 @@
+{
+  "name": "@vidy-dev/ethereum-utils",
+  "version": "1.0.0",
+  "description": "Utilities for Ethereum contract development and testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha './{,!(node_modules)/**/}*.test.js'",
+    "test:watch": "NODE_ENV=test mocha './{,!(node_modules)/**/}*.test.js' --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VIDY/ethereum-utils.git"
+  },
+  "author": "jake",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VIDY/ethereum-utils/issues"
+  },
+  "homepage": "https://github.com/VIDY/ethereum-utils#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "bignumber.js": "^7.2.1",
+    "bluebird": "^3.5.1",
+    "camel-case": "^3.0.0",
+    "lodash": "^4.17.10"
+  }
+}
