@@ -7,6 +7,10 @@
     "test": "NODE_ENV=test mocha './{,!(node_modules)/**/}*.test.js'",
     "test:watch": "NODE_ENV=test mocha './{,!(node_modules)/**/}*.test.js' --watch"
   },
+  "bin": {
+    "eth-node-healthcheck" : "standalone/eth-node-synced-server.js",
+    "eth-node-synccheck" : "standalone/eth-node-syncing-server.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VIDY/ethereum-utils.git"
@@ -18,13 +22,20 @@
   },
   "homepage": "https://github.com/VIDY/ethereum-utils#readme",
   "devDependencies": {
-    "mocha": "^5.2.0"
+    "assert-throws-async": "^3.0.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "nock": "^9.4.3",
+    "sinon": "^6.1.4"
   },
   "dependencies": {
+    "argparse": "^1.0.10",
     "bignumber.js": "^7.2.1",
     "bluebird": "^3.5.1",
     "camel-case": "^3.0.0",
     "lodash": "^4.17.10",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2",
     "truffle-contract": "^3.0.6"
   }
 }
