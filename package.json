@@ -1,6 +1,6 @@
 {
   "name": "@vidy-dev/ethereum-utils",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "Utilities for Ethereum contract development and testing",
   "main": "index.js",
   "scripts": {
