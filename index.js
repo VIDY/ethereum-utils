@@ -1,3 +1,7 @@
 'use strict'
 
-module.exports = require('./lib/require-dir')(`${__dirname}/lib`)
+module.exports = Object.assign(
+  {},
+  require('ethjs-util'),
+  require('./lib/require-dir')(`${__dirname}/lib`)
+)
