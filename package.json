@@ -8,6 +8,7 @@
     "test:watch": "NODE_ENV=test mocha './{,!(node_modules)/**/}*.test.js' --watch"
   },
   "bin": {
+    "eth-node-dummycheck": "standalone/eth-node-dummy-server.js",
     "eth-node-healthcheck": "standalone/eth-node-synced-server.js",
     "eth-node-synccheck": "standalone/eth-node-syncing-server.js"
   },

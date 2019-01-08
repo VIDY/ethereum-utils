@@ -64,6 +64,16 @@ parser.addArgument(
   }
 )
 
+parser.addArgument(
+  [ '-V', '--verbose' ],
+  {
+    defaultValue: false,
+    help: 'Provide console output for every incoming request',
+    dest: 'verbose',
+    action: 'storeTrue'
+  }
+)
+
 const args = parser.parseArgs();
 
 if (!args.etherscanApiKey) {
@@ -76,7 +86,8 @@ ethNodeSyncedServer({
   port: args.port,
   network: args.network,
   etherscanApiKey: args.etherscanApiKey,
-  maxBlockDifference: args.maxBlockDifference
+  maxBlockDifference: args.maxBlockDifference,
+  verbose: args.verbose
 })
 
 console.log(`listening on ${args.port} to report "synced" status of ${args.network} network node at http://${args.nodeAddress}:${args.nodePort}`)
