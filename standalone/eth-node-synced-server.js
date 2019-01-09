@@ -65,6 +65,14 @@ parser.addArgument(
 )
 
 parser.addArgument(
+  [ '-c', '--cache-seconds' ],
+  {
+    help: 'Seconds to cache network block time responses, to reduce the number of etherscan API calls made.  Caching will result in inaccurate output.',
+    dest: 'cacheSeconds'
+  }
+)
+
+parser.addArgument(
   [ '-V', '--verbose' ],
   {
     defaultValue: false,
@@ -87,6 +95,7 @@ ethNodeSyncedServer({
   network: args.network,
   etherscanApiKey: args.etherscanApiKey,
   maxBlockDifference: args.maxBlockDifference,
+  cacheSeconds: args.cacheSeconds,
   verbose: args.verbose
 })
 
