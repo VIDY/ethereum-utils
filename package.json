@@ -24,20 +24,20 @@
   "homepage": "https://github.com/VIDY/ethereum-utils#readme",
   "devDependencies": {
     "assert-throws-async": "^3.0.0",
-    "chai": "^4.1.2",
+    "chai": "^4.2.0",
     "mocha": "^5.2.0",
-    "nock": "^9.4.3",
-    "sinon": "^6.1.4"
+    "nock": "^9.6.1",
+    "sinon": "^6.3.5"
   },
   "dependencies": {
     "argparse": "^1.0.10",
     "bignumber.js": "^7.2.1",
-    "bluebird": "^3.5.1",
+    "bluebird": "^3.5.4",
     "camel-case": "^3.0.0",
     "ethjs-util": "^0.1.6",
-    "lodash": "^4.17.10",
-    "request": "^2.87.0",
-    "request-promise": "^4.2.2",
-    "truffle-contract": "^3.0.6"
+    "lodash": "^4.17.11",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "truffle-contract": "^4.0.11"
   }
 }
