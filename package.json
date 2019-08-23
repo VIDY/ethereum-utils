@@ -4,6 +4,7 @@
   "description": "Utilities for Ethereum contract development and testing",
   "main": "index.js",
   "scripts": {
+    "test-full": "NODE_ENV=test mocha './{,!(node_modules)/**/}*.test.js' 'tests/*.js'",
     "test": "NODE_ENV=test mocha './{,!(node_modules)/**/}*.test.js'",
     "test:watch": "NODE_ENV=test mocha './{,!(node_modules)/**/}*.test.js' --watch"
   },
@@ -27,7 +28,8 @@
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
     "nock": "^9.6.1",
-    "sinon": "^6.3.5"
+    "sinon": "^6.3.5",
+    "web3": "1.2.1"
   },
   "dependencies": {
     "argparse": "^1.0.10",
@@ -38,6 +40,6 @@
     "lodash": "^4.17.11",
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
-    "truffle-contract": "^4.0.11"
+    "truffle-contract": "^4.0.30"
   }
 }
