@@ -17,8 +17,8 @@
     "type": "git",
     "url": "git+https://github.com/VIDY/ethereum-utils.git"
   },
-  "author": "jake",
-  "license": "ISC",
+  "author": "Vidy",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/VIDY/ethereum-utils/issues"
   },
