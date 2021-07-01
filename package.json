@@ -29,16 +29,17 @@
     "mocha": "^5.2.0",
     "nock": "^9.6.1",
     "sinon": "^6.3.5",
-    "web3": "1.2.2"
+    "web3": "1.4.0"
   },
   "dependencies": {
     "argparse": "^1.0.10",
     "bignumber.js": "^7.2.1",
     "bluebird": "^3.5.4",
     "camel-case": "^3.0.0",
+    "ethers": "^5.4.0",
     "ethjs-util": "^0.1.6",
     "lodash": "^4.17.11",
-    "request": "^2.88.0",
+    "request": "^2.88.2",
     "request-promise": "^4.2.4",
     "truffle-contract": "^4.0.30"
   }
